@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="call_view_tree" model="ir.ui.view">
+        <field name="name">call.view.tree</field>
+        <field name="model">call.log</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="called_from"/>
+                <field name="called_to"/>
+                <field name="call_site" optional="show"/>
+                <field name="call_type" optional="show"/>
+                <field name="call_date" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="call_view_form" model="ir.ui.view">
+        <field name="name">Call Log</field>
+        <field name="model">call.log</field>
+        <field name="arch" type="xml">
+            <form string="Call Log" >
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="called_from"/>
+                            <field name="call_type"/>
+                            <field name="call_date"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="called_to"/>
+                            <field name="call_site"/>
+                            <field name="call_duration"/>
+                        </group>
+                    </group>
+                    <group name="group_bottom">
+                        <field name="call_remarks"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

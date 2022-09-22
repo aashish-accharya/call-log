@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<odoo>
+ <!-- Opening to do list -->
+ <act_window id="action_site_info" name="Site Info" res_model="site.info" view_mode="tree,form"/>
+ <!-- Menu Item -->
+ <menuitem id="menu_site_info" name="Site Info" action="action_site_info" parent="Call_log.menu_call_log"/>
+</odoo>
