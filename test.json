@@ -1,0 +1,11 @@
+[
+{
+    "called_from":1,
+    "called_to": "823642",
+    "call_type": "incoming",
+    "call_site": 2,
+    "call_date": "2022-09-23 00:00:00",
+    "call_duration": 235,
+    "call_remarks": "test3"
+}
+]
